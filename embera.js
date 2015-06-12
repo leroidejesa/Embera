@@ -1,0 +1,1 @@
+Embera = Ember.Application.create();
