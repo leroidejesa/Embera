@@ -3,11 +3,10 @@
 }
 
 .control-group {
-  padding-right: 15px;
+  padding-right: 14px;
   padding-left: 10px;
   padding-bottom: 0px;
   padding-top: 8px;
-  align:
 }
 
 #logo {
@@ -28,6 +27,18 @@
   color: #990000;
 }
 
-.container {
-  font-family: 'Oxygen', sans-serif;
+#everything-else {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 70px;
+  margin-top: 50px;
+  margin-right: 310px;
+}
+
+#bottom {
+  margin-top: 150px;
+  float: bottom;
+  font-weight: normal;
+  font-size: .7em;
+  color: grey;
+  font-family: 'Martel', serif;
 }

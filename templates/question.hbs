@@ -12,26 +12,26 @@
       {{textarea value=description id="description" class="form-control" rows="15"}}
     </div>
 
-    <button class="btn btn-primary" {{action 'save'}}>Save</button><br>
-    <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+    <button class="btn btn-danger" {{action 'delete'}}>delete</button>
   </form>
 
 {{else}}
-  <p>{{questionTitle}}</p>
-  <p>{{author}}</p>
+  <h4><strong>{{questionTitle}}</strong></h4>
+  <h6>by {{author}}</h6>
   <p>{{description}}</p>
 
-  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
 {{/if}}
-
+<hr>
 {{outlet}}
-<h2>Answers</h2>
+<h4><strong>Answers</strong></h4>
 
 {{#each answer in answers itemController="answer"}}
   <p>
     {{answer.text}}
-    <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
+    <button class="btn btn-xs btn-default" {{action 'delete'}}>delete</button>
   </p>
 {{/each}}
-
-<p>{{#link-to 'new-answer' this class="btn btn-success"}}New answer{{/link-to}}</p>
+<hr>
+<p>{{#link-to 'new-answer' this class="btn btn-success"}}Add a new answer{{/link-to}}</p>

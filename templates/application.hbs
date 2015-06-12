@@ -13,12 +13,12 @@
         </div>
       </form></li>
 
-      <li><div class="control-group">{{#link-to 'questions' class="btn btn-default"}}Questions{{/link-to}}</div></li>
+      <li><div class="control-group">{{#link-to 'questions' class="btn btn-default"}}Recent Questions{{/link-to}}</div></li>
       <li><div class="control-group">{{#link-to 'new-question' class="btn btn-danger"}}New Question{{/link-to}}</div></li>
     </ul>
   </nav>
-  {{outlet}}
-  
-</div>
-<div class='everything-else'>
+
+  <div id="everything-else">
+    {{outlet}}
+  </div>
 </div>
