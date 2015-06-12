@@ -16,23 +16,24 @@
       <button class="btn btn-primary" {{action 'save'}}>Save</button><br>
       <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
     </form>
+
   {{else}}
     <p>{{questionTitle}}</p>
+    <p>{{author}}</p>
     <p>{{description}}</p>
 
     <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
   {{/if}}
+
+ {{outlet}}
+ <h2>Answers</h2>
+
+ {{#each answer in answers itemController="answer"}}
+    <p>
+      {{answer.text}}
+      <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
+    </p>
+  {{/each}}
+
 </div>
-
-<!-- {{outlet}}
-
-<h2>Answers</h2>
-
-{{#each answer in answers itemController="answer"}}
-  <p>
-    {{answer.text}}
-    <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
-  </p>
-{{/each}} -->
-
-<!-- <p>{{#link-to 'new-answer' this class="btn btn-success"}}New answer{{/link-to}}</p> -->
+<p>{{#link-to 'new-answer' this class="btn btn-success"}}New answer{{/link-to}}</p>
