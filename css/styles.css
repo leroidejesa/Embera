@@ -36,7 +36,9 @@
 
 #bottom {
   margin-top: 150px;
-  float: bottom;
+  position: fixed;
+  top: 400px;
+  /*right: 5px;*/
   font-weight: normal;
   font-size: .7em;
   color: grey;
