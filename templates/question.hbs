@@ -1,39 +1,37 @@
-<div class="container">
-  <h1>{{question}}</h1>
+<h1>{{question}}</h1>
 
-  {{#if isEditing}}
-    <form>
-      <div class="form-group">
-        <label for="question-title">Question Title</label>
-        {{input value=question-title id="question-title" class="form-control"}}
-      </div>
+{{#if isEditing}}
+  <form>
+    <div class="form-group">
+      <label for="question-title">Question Title</label>
+      {{input value=question-title id="question-title" class="form-control"}}
+    </div>
 
-      <div class="form-group">
-        <label for="description">Description</label>
-        {{textarea value=description id="description" class="form-control" rows="15"}}
-      </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description id="description" class="form-control" rows="15"}}
+    </div>
 
-      <button class="btn btn-primary" {{action 'save'}}>Save</button><br>
-      <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
-    </form>
+    <button class="btn btn-primary" {{action 'save'}}>Save</button><br>
+    <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
+  </form>
 
-  {{else}}
-    <p>{{questionTitle}}</p>
-    <p>{{author}}</p>
-    <p>{{description}}</p>
+{{else}}
+  <p>{{questionTitle}}</p>
+  <p>{{author}}</p>
+  <p>{{description}}</p>
 
-    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-  {{/if}}
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+{{/if}}
 
- {{outlet}}
- <h2>Answers</h2>
+{{outlet}}
+<h2>Answers</h2>
 
- {{#each answer in answers itemController="answer"}}
-    <p>
-      {{answer.text}}
-      <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
-    </p>
-  {{/each}}
+{{#each answer in answers itemController="answer"}}
+  <p>
+    {{answer.text}}
+    <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
+  </p>
+{{/each}}
 
-</div>
 <p>{{#link-to 'new-answer' this class="btn btn-success"}}New answer{{/link-to}}</p>

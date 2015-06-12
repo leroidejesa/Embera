@@ -1,11 +1,10 @@
-<div class="container">
-  <h1>Recent Questions</h1>
 
-  <ul>
-    {{#each question in model}}
-      <li>{{#link-to 'question' question}}{{question.questionTitle}}{{question.author}}{{/link-to}}</li>
-    {{/each}}
-  </ul>
+<h1>Recent Questions</h1>
 
-  {{#link-to 'new-question' classNames="btn btn-primary"}}Ask a question{{/link-to}}
-</div>
+<ul>
+  {{#each question in model}}
+    <li>{{#link-to 'question' question}}{{question.questionTitle}}{{question.author}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-question' classNames="btn btn-primary"}}Ask a question{{/link-to}}
