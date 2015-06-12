@@ -13,7 +13,8 @@
         {{textarea value=description id="description" class="form-control" rows="15"}}
       </div>
 
-      <button class="btn btn-primary" {{action 'save'}}>Save</button>
+      <button class="btn btn-primary" {{action 'save'}}>Save</button><br>
+      <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
     </form>
   {{else}}
     <p>{{questionTitle}}</p>
@@ -22,16 +23,16 @@
     <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
   {{/if}}
 </div>
-<!--
-{{outlet}}
 
-<h2>Comments</h2>
+<!-- {{outlet}}
 
-{{#each comment in comments itemController="comment"}}
+<h2>Answers</h2>
+
+{{#each answer in answers itemController="answer"}}
   <p>
-    {{comment.text}}
+    {{answer.text}}
     <button class="btn btn-xs btn-danger" {{action 'delete'}}>delete</button>
   </p>
-{{/each}}
+{{/each}} -->
 
-<p>{{#link-to 'new-comment' this class="btn btn-success"}}New comment{{/link-to}}</p> -->
+<!-- <p>{{#link-to 'new-answer' this class="btn btn-success"}}New answer{{/link-to}}</p> -->
