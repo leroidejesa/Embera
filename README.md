@@ -5,7 +5,7 @@
 
 Completed as a one-day `Ember.js` assignment at [Epicodus](http://epicodus.com), Portland, Oregon.
 
-Preview online on [BitBalloon](http://embera.bitballoon.com)<br>
+Preview online on [BitBalloon™](http://embera.bitballoon.com)<br>
 *or*<br>
 Run `$ python -m SimpleHTTPServer` from your project folder and visit `localhost:8000` in your browser.
 
