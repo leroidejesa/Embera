@@ -14,5 +14,5 @@ Run `$ python -m SimpleHTTPServer` from your project folder and then navigate to
 
 
 
-<hr>
-© 2015 Leroi Dejesa. All Rights Reserved. License: MIT
+<br><br><br><br><br>
+© 2015 Leroi Dejesa. All Rights Reserved. License: [MIT](http://opensource.org/licenses/MIT)
