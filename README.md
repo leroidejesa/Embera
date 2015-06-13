@@ -1,5 +1,6 @@
 <img src="http://i.imgur.com/6dXCZql.png"><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ask questions and give answers.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Leroi Dejesa<br>
 <hr>
 
 
