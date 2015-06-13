@@ -1,15 +1,14 @@
-<img src="http://i.imgur.com/6dXCZql.png">
-
+<img src="http://i.imgur.com/6dXCZql.png"><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ask questions and give answers.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://embera.bitballoon.com
 <hr>
 
 
 Completed as a one-day `Ember.js` assignment at [Epicodus](http://epicodus.com), Portland, Oregon.
 
-####To view:
+Preview online on [BitBalloon](http://embera.bitballoon.com)<br>
+*or*<br>
+Run `$ python -m SimpleHTTPServer` from your project folder and visit `localhost:8000` in your browser.
 
-Run `$ python -m SimpleHTTPServer` from your project folder and then navigate to `localhost:8000` in your browser.
 
 
 
