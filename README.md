@@ -7,7 +7,7 @@ Completed as a one-day `Ember.js` assignment at [Epicodus](http://epicodus.com),
 
 Preview online on [BitBalloon™](http://embera.bitballoon.com)<br>
 **or**<br>
-1. Clone repository.
+1. Clone repository.<br>
 2. Run `$ python -m SimpleHTTPServer` from your project folder.<br>
 3. Navigate to `localhost:8000` in your favorite browser.
 
