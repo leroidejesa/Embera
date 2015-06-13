@@ -12,8 +12,8 @@
       {{textarea value=description id="description" class="form-control" rows="15"}}
     </div>
 
-    <button class="btn btn-primary" {{action 'save'}}>Save</button>
-    <button class="btn btn-danger" {{action 'delete'}}>delete</button>
+    <button class="btn blue-btn" {{action 'save'}}>Save</button>
+    <button class="btn delete-btn" {{action 'delete'}}>Delete</button>
   </form>
 
 {{else}}
@@ -21,7 +21,7 @@
   <h6>by {{author}}</h6>
   <p>{{description}}</p>
 
-  <button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-xs blue-btn" {{action 'edit'}}>Edit</button>
 {{/if}}
 <hr>
 {{outlet}}
@@ -30,8 +30,8 @@
 {{#each answer in answers itemController="answer"}}
   <p>
     {{answer.text}}
-    <button class="btn btn-xs btn-default" {{action 'delete'}}>delete</button>
+    <button class="btn btn-xs delete-btn" {{action 'delete'}}>delete</button>
   </p>
 {{/each}}
 <hr>
-<p>{{#link-to 'new-answer' this class="btn btn-success"}}Add a new answer{{/link-to}}</p>
+<p>{{#link-to 'new-answer' this class="btn success-btn"}}Add a new answer{{/link-to}}</p>
